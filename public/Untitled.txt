@@ -1,0 +1,22 @@
+The Congestion Charge is a £15 daily charge if you drive within the Congestion Charge zone 7:00-18:00 Monday-Friday and 12:00-18:00 Sat-Sun and bank holidays. No charge between Christmas Day and New Year's Day bank holiday (inclusive).
+
+The easiest way to pay is by setting up Auto Pay. Exemptions and discounts are also available.
+
+
+// MapPreferences (already correctly using localStorage)
+{
+  mapType: 'standard' | 'satellite';
+  showControls: boolean;
+  showDetails: boolean;
+  lastCenter: LatLngExpression;
+  lastZoom: number;
+  activeButton: string | null;
+}
+
+
+Lets fix the flow of the onboarding process. When a user opens/visits the web app, this is the order of  of onboarding process.
+1). The splash screen @SplashScreen.tsx first
+2). If the user is just visiting the web app for the first time, the @FirstLaunch.tsx second.
+This 2 pages comes first before any form of authentication.
+
+Note: Price modal @PricingModal.tsx will only show once, which is 10 seconds after passing the authentication checks. The modal will not show until 10 seconds after the entire on-boarding process is completed and user is on homepage. This are the supporting files: @AppRoutes.tsx, @PricingContext.tsx, @useFirstLaunch.ts, @useAuth.ts, and @App.tsx.

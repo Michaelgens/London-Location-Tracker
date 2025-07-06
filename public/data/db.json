@@ -1,0 +1,242 @@
+{
+  "users": {
+    "user1": {
+      "uid": "user1",
+      "email": "john.doe@example.com",
+      "displayName": "John Doe",
+      "createdAt": "2024-03-20T10:00:00Z",
+      "lastLoginAt": "2024-03-20T15:30:00Z",
+      "authProvider": "email",
+      "emailVerified": false,
+      "currentZoneStatus": {
+        "status": "OUTSIDE_ZONE",
+        "lastUpdated": "2024-03-20T15:30:00Z",
+        "unpaidEntry": {
+          "date": "20 March 2024",
+          "time": "13:45",
+          "timestamp": "2024-03-20T13:45:00Z"
+        }
+      },
+      "history": {
+        "entry_1710720000000": {
+          "date": "15 March 2024",
+          "time": "10:30",
+          "status": "paid",
+          "timestamp": "2024-03-15T10:30:00Z"
+        },
+        "entry_1710633600000": {
+          "date": "14 March 2024",
+          "time": "09:15",
+          "status": "paid",
+          "timestamp": "2024-03-14T09:15:00Z"
+        },
+        "entry_1710460800000": {
+          "date": "12 March 2024",
+          "time": "14:45",
+          "status": "paid",
+          "timestamp": "2024-03-12T14:45:00Z"
+        }
+      },
+      "notifications": {
+        "notif_1710936000000": {
+          "id": 1710936000000,
+          "title": "Payment Required",
+          "message": "You have entered a congestion zone. Please make payment.",
+          "time": "10 mins ago",
+          "type": "warning",
+          "read": false,
+          "timestamp": "2024-03-20T15:20:00Z"
+        },
+        "notif_1710935700000": {
+          "id": 1710935700000,
+          "title": "Zone Entry",
+          "message": "You have entered the London Congestion Zone.",
+          "time": "15 mins ago",
+          "type": "zone_entry",
+          "read": false,
+          "timestamp": "2024-03-20T15:15:00Z"
+        },
+        "notif_1710935400000": {
+          "id": 1710935400000,
+          "title": "Approaching Congestion Zone",
+          "message": "You are within 3 miles of the congestion charge zone",
+          "time": "20 mins ago",
+          "type": "proximity_alert",
+          "read": false,
+          "timestamp": "2024-03-20T15:10:00Z"
+        },
+        "notif_1710932400000": {
+          "id": 1710932400000,
+          "title": "New Sign In",
+          "message": "New sign in to your account",
+          "time": "1 hour ago",
+          "type": "signin",
+          "read": true,
+          "timestamp": "2024-03-20T14:30:00Z"
+        },
+        "notif_1710720000000": {
+          "id": 1710720000000,
+          "title": "Welcome!",
+          "message": "Your account has been successfully created.",
+          "time": "5 days ago",
+          "type": "signup",
+          "read": true,
+          "timestamp": "2024-03-15T10:00:00Z"
+        }
+      },
+      "settings": {
+        "alertTone": "basic1",
+        "notifications": {
+          "zoneAlerts": true,
+          "proximityAlert": true,
+          "paymentReminders": true,
+          "locationTracking": true
+        }
+      },
+      "subscription": {
+        "planId": "monthly",
+        "startDate": "2024-03-01T00:00:00Z",
+        "endDate": "2024-03-31T23:59:59Z",
+        "status": "active"
+      }
+    },
+    "user2": {
+      "uid": "user2",
+      "email": "jane.smith@gmail.com",
+      "displayName": "Jane Smith",
+      "createdAt": "2024-03-19T08:00:00Z",
+      "lastLoginAt": "2024-03-20T14:20:00Z",
+      "authProvider": "google",
+      "emailVerified": true,
+      "currentZoneStatus": {
+        "status": "IN_ZONE_PAID",
+        "lastUpdated": "2024-03-20T14:20:00Z",
+        "unpaidEntry": null
+      },
+      "history": {
+        "entry1": {
+          "date": "20 March 2024",
+          "time": "11:20",
+          "status": "paid",
+          "timestamp": "2024-03-20T11:20:00Z"
+        },
+        "entry2": {
+          "date": "19 March 2024",
+          "time": "08:45",
+          "status": "paid",
+          "timestamp": "2024-03-19T08:45:00Z"
+        }
+      },
+      "notifications": {
+        "notif1": {
+          "id": 1,
+          "title": "Payment Confirmed",
+          "message": "Your payment has been confirmed for today's zone entry.",
+          "time": "30 mins ago",
+          "type": "payment",
+          "read": false,
+          "timestamp": "2024-03-20T15:00:00Z"
+        },
+        "notif2": {
+          "id": 2,
+          "title": "Zone Exit",
+          "message": "You have left the London Congestion Zone.",
+          "time": "1 hour ago",
+          "type": "zone_exit",
+          "read": false,
+          "timestamp": "2024-03-20T14:30:00Z"
+        },
+        "notif3": {
+          "id": 3,
+          "title": "New Sign In",
+          "message": "New sign in to your account",
+          "time": "2 hours ago",
+          "type": "signin",
+          "read": true,
+          "timestamp": "2024-03-20T13:30:00Z"
+        },
+        "notif4": {
+          "id": 4,
+          "title": "Welcome!",
+          "message": "Your account has been successfully created with Google.",
+          "time": "1 day ago",
+          "type": "signup",
+          "read": true,
+          "timestamp": "2024-03-19T08:00:00Z"
+        }
+      },
+      "settings": {
+        "alertTone": "basic3",
+        "notifications": {
+          "zoneAlerts": true,
+          "proximityAlert": false,
+          "paymentReminders": true,
+          "locationTracking": false
+        }
+      },
+      "subscription": {
+        "planId": "free-trial",
+        "startDate": "2024-03-19T08:00:00Z",
+        "endDate": "2024-03-26T07:59:59Z",
+        "status": "active"
+      }
+    }
+  },
+  "plans": {
+    "free-trial": {
+      "id": "free-trial",
+      "name": "Free Trial",
+      "price": "0.00",
+      "period": "7 days",
+      "color": "#4caf50",
+      "features": [
+        "Valid for 7 days",
+        "Single zone entry",
+        "Standard customer support",
+        "Try all basic features"
+      ],
+      "recommended": false
+    },
+    "weekly": {
+      "id": "weekly",
+      "name": "Weekly Pass",
+      "price": "3.50",
+      "period": "per week",
+      "color": "#2196f3",
+      "features": [
+        "Valid for 7 days",
+        "Single zone entry",
+        "Standard customer support"
+      ],
+      "recommended": false
+    },
+    "monthly": {
+      "id": "monthly",
+      "name": "Monthly Pass",
+      "price": "9.00",
+      "period": "per month",
+      "color": "#9c27b0",
+      "features": [
+        "Valid for 30 days",
+        "Unlimited zone entries",
+        "Priority customer support",
+        "Email notifications"
+      ],
+      "recommended": true
+    },
+    "yearly": {
+      "id": "yearly",
+      "name": "Yearly Pass",
+      "price": "90.00",
+      "period": "per year",
+      "color": "#f50057",
+      "features": [
+        "Valid for 365 days",
+        "Unlimited zone entries",
+        "Premium customer support",
+        "Email notifications"
+      ],
+      "recommended": false
+    }
+  }
+}
