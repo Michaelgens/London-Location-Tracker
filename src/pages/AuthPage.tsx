@@ -121,20 +121,14 @@ const AuthPage = () => {
   const handleForgotPassword = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.email) {
-      setError({
-        code: 'missing_email',
-        message: 'Please enter your email address to reset your password.'
-      });
-      return;
+      return; // resetPassword will handle the error
     }
     setIsSubmitting(true);
     try {
       await resetPassword(formData.email);
-      // Show success message
       alert('Password reset email sent. Please check your inbox.');
       setMode('signin');
     } catch (err) {
-      // Error is already handled by useAuth hook
       if (process.env.NODE_ENV === 'development') {
         console.error('Password reset error:', err);
       }
